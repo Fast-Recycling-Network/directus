@@ -14,7 +14,7 @@ services:
         value: ignore
       - key: DB_PORT
         value: 5432
-       - key: DB_USER
+      - key: DB_USER
         value: ignore
       - key: DB_DATABASE
         value: ignore

@@ -1,0 +1,21 @@
+databases:
+  - name: vue-js-israel-db
+    plan: starter
+services:
+  - type: web
+    env: docker
+    name: directus
+    autoDeploy: false
+    envVars:
+      - key: DB_CONNECTION_STRING
+        fromDatabase:
+          name: vue-js-israel-db
+          property: connectionString
+      - key: KEY
+        generateValue: true
+      - key: SECRET
+        generateValue: true
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      - key: ADMIN_EMAIL
+        value: 'barakplasma@gmail.com'

@@ -33,3 +33,8 @@ services:
         generateValue: true
       - key: ADMIN_EMAIL
         value: 'barakplasma@gmail.com'
+      - key: PORT
+        fromService:
+          type: web
+          name: directus
+          property: port

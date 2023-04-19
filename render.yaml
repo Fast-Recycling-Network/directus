@@ -1,6 +1,7 @@
 databases:
   - name: vue-js-israel-db
     plan: free
+    ipAllowList: []
 services:
   - type: web
     env: docker

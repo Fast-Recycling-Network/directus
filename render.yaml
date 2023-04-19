@@ -33,6 +33,8 @@ services:
         generateValue: true
       - key: ADMIN_EMAIL
         value: 'barakplasma@gmail.com'
+      - key: LOG_STYLE
+        value: raw
       - key: PORT
         fromService:
           type: web

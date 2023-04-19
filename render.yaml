@@ -35,6 +35,10 @@ services:
         value: 'barakplasma@gmail.com'
       - key: LOG_STYLE
         value: raw
+      - key: CORS_ENABLED
+        value: true
+      - key: CORS_ORIGIN
+        value: true
       - key: PORT
         fromService:
           type: web

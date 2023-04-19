@@ -7,6 +7,7 @@ services:
     env: docker
     name: directus
     plan: free
+    healthCheckPath: /server/health
     envVars:
       - key: DB_CLIENT
         value: postgres

@@ -1,11 +1,11 @@
 databases:
   - name: vue-js-israel-db
-    plan: starter
+    plan: free
 services:
   - type: web
     env: docker
     name: directus
-    autoDeploy: false
+    plan: free
     envVars:
       - key: DB_CONNECTION_STRING
         fromDatabase:

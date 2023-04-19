@@ -8,6 +8,8 @@ services:
     name: directus
     plan: free
     envVars:
+      - key: DB_CLIENT
+        value: postgres
       - key: DB_CONNECTION_STRING
         fromDatabase:
           name: vue-js-israel-db

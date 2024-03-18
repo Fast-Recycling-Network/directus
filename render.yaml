@@ -23,7 +23,7 @@ services:
         value: ignore 
       - key: DB_CONNECTION_STRING
         fromDatabase:
-          name: vue-js-israel-db
+          name: fastrn-db
           property: connectionString
       - key: KEY
         generateValue: true
@@ -32,7 +32,7 @@ services:
       - key: ADMIN_PASSWORD
         generateValue: true
       - key: ADMIN_EMAIL
-        value: 'barakplasma@gmail.com'
+        value: 'avaikamarcel@gmail.com'
       - key: LOG_STYLE
         value: raw
       - key: CORS_ENABLED

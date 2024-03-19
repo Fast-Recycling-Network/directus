@@ -20,7 +20,7 @@ services:
       EXTENSIONS_AUTO_RELOAD: 'true'
       CONTENT_SECURITY_POLICY_DIRECTIVES__IMG-SRC: 'self,localhost:8055,data:,blob:'
 
-      ADMIN_EMAIL: 'barakplasma@gmail.com'
+      ADMIN_EMAIL: 'avaikamarcel@gmail.com'
       ADMIN_PASSWORD: 'd1r3ctu5' # use docker compose secrets instead
     depends_on:
       - postgres
